@@ -2,6 +2,8 @@
 
 This project is from [Brain Clozel's](https://spring.io/team/bclozel) tech-talk [From Zero to Hero with Spring Boot](https://www.youtube.com/watch?v=aA4tfBGY6jY).
 
+Main repository [here](https://github.com/bclozel/issues-dashboard).
+
 <br>
 
 [![From Zero to Hero with Spring Boot](https://img.youtube.com/vi/aA4tfBGY6jY/0.jpg)](https://www.youtube.com/watch?v=aA4tfBGY6jY)
@@ -22,5 +24,9 @@ This project is from [Brain Clozel's](https://spring.io/team/bclozel) tech-talk 
     management.endpoints.web.exposure.include=*
     management.endpoint.health.show-details=always
     ```
- - User.withDefaultPasswordEncoder is deprecated
- - StaticResourceRequest.toCommonsLocations() is changed to  
+ - _User.withDefaultPasswordEncoder_ is deprecated
+ - _StaticResourceRequest.toCommonsLocations()_ is changed to _PathRequest.toStaticResources().atCommonLocations()_.
+ - _NoOpPasswordEncoder_ is deprecated so _BCryptPasswordEncoder_ is provided.
+ 
+ 
+  
